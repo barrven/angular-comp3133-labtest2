@@ -1,0 +1,10 @@
+<div *ngIf="launch">
+    
+    <h1>SpaceX Mission Details</h1>
+    <p>{{launch.mission_name}}</p>
+    <p>{{launch.launch_year}}</p>
+    <p>{{launch.details}}</p>
+    
+</div>
+
+<button (click)="goBack()">go back</button>
