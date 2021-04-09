@@ -1,0 +1,46 @@
+h1{
+    text-align: center;
+}
+
+.mission-card{
+    padding: 15px;
+    max-width: 700px;
+    margin: auto;
+    background-color: #e6ecf5;
+}
+
+.mission-card img{
+    float: left;
+    width: 250px;
+    height: 250px;
+    margin-right: 20px;
+}
+
+.info p {
+    margin: 5px;
+}
+
+.info h2{
+    margin: 8px;
+}
+
+.details{
+    clear: both;
+    margin-top: 40px;
+}
+
+.mission-card button{
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+    background-color: #0565f5;
+    border: 1px solid black;
+    border-radius: 10px;
+    color: white;
+}
+
+.mission-card button:hover{
+    -webkit-box-shadow: inset 0px 0px 8px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 0px 0px 8px 0px rgba(0,0,0,0.75);
+    box-shadow: inset 0px 0px 8px 0px rgba(0,0,0,0.75);
+}

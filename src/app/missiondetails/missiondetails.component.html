@@ -1,10 +1,44 @@
 <div *ngIf="launch">
     
     <h1>SpaceX Mission Details</h1>
-    <p>{{launch.mission_name}}</p>
-    <p>{{launch.launch_year}}</p>
-    <p>{{launch.details}}</p>
+    
+    <div class="mission-card">
+        <img src="{{launch.links.mission_patch_small}}">
+        
+        <div class="info">
+            <h2>Mission</h2>
+            <p><strong>Name:</strong> {{launch.mission_name}}</p>
+            <p><strong>Year:</strong> {{launch.launch_year}}</p>
+
+            <h2>Rocket</h2>
+            <p><strong>Name:</strong> {{launch.rocket.rocket_name}}</p>
+            <p><strong>Type:</strong> {{launch.rocket.rocket_type}}</p>
+
+            <h2>Launch Site</h2>
+            <p>{{launch.launch_site.site_name_long}}</p>
+        </div>
+
+        <div class="details">
+            <h2>Launch Details</h2>
+            <p>{{launch.details}}</p>
+
+            <h2>More Info on Launch Details</h2>
+            <p>
+                <a href="{{launch.links.artice_link}}" target="_blank">
+                    <span class="material-icons">subject</span>
+                </a>
+                <a href="{{launch.links.wikipedia}}" target="_blank">
+                    <span class="material-icons">public</span>
+                </a>
+                <a href="{{launch.links.video_link}}" target="_blank">
+                    <span class="material-icons">videocam</span>
+                </a>
+            </p>
+        </div>
+        
+        <button (click)="goBack()">Back to List</button>
+    </div>
     
 </div>
 
-<button (click)="goBack()">go back</button>
+

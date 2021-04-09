@@ -4,7 +4,8 @@ export interface Launch {
     mission_name: string;
     launch_year: string;
     details: string;
-    mission_patch_small: string;
-    
+    links: object;
+    rocket: object;
+    launch_site: object;
     video_link: string;
 }
