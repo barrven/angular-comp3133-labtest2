@@ -1,0 +1,9 @@
+<p>Mission List</p>
+
+<ul class="heroes">
+    <li *ngFor="let launch of launches">
+        <a routerLink="/detail/{{launch.flight_number}}">
+            <span class="badge">{{launch.flight_number}}</span> {{launch.mission_name}}
+        </a>
+    </li>
+</ul>
